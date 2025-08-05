@@ -15,29 +15,27 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid d-flex align-items-center">
-                <a class="navbar-brand me-3" href="#">
-                    <img src="img/duck.png" alt="duck" style="height: 40px;">
-                </a>
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img src="img/duck.png" alt="duck">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
                     aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainNavbar">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="#">Catalogo Libri</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Prodotti</a>
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contatti</a>
+                            <a class="nav-link" href="#">Storico Prestiti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="#">Help</a>
                         </li>
                     </ul>
                 </div>
@@ -45,14 +43,14 @@
         </nav>
     </header>
 
-    <main>           
-            <div class="container">
-                <section class="d-flex justify-content-between">
-                    <h2>Catalogo Libri</h2>
-                    <button class="btn btn-primary">Aggiungi libro</button>
-                </section>
-                <section>
-                    <table class="table table-striped"> 
+    <main>
+        <div class="container">
+            <section class="d-flex justify-content-between">
+                <h2>Catalogo Libri</h2>
+                <button class="btn btn-primary">Aggiungi libro</button>
+            </section>
+            <section>
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">Titolo</th>
@@ -219,11 +217,11 @@
                             </td>
                         </tr>
                     </tbody>
-                </section>
+            </section>
             </table>
-            
+
         </div>
-        
+
     </main>
 </body>
 
