@@ -1,0 +1,15 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: yellowgreen;
+    height: 80px;
+}
+
+.container {
+    height: 500px;
+    background-color: lightcoral;
+}
