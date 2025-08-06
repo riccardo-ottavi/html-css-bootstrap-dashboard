@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Nuovo Libro</title>
 </head>
+
 <body>
     <div class="container">
         <h1 class="mt-5 mb-5">Nuovo Libro</h1>
@@ -19,14 +21,16 @@
                 <h2>Nome Autore</h2>
                 <form action="#">
                     <label for="Nome Autore"></label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control" placeholder="Inserisci il nome dell' autore">
+                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
+                        placeholder="Inserisci il nome dell' autore">
                 </form>
             </div>
             <div class="col-md-6">
                 <h2>Nome Autore</h2>
                 <form action="#">
                     <label for="Nome Autore"></label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control" placeholder="Inserisci il nome dell' autore">
+                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
+                        placeholder="Inserisci il nome dell' autore">
                 </form>
             </div>
         </div>
@@ -35,42 +39,63 @@
                 <h2>Nome Autore</h2>
                 <form action="#">
                     <label for="Nome Autore"></label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control" placeholder="Inserisci il nome dell' autore">
+                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
+                        placeholder="Inserisci il nome dell' autore">
                 </form>
             </div>
         </div>
         <div class="row mb-5">
             <div class="col-md-4">
                 <h2>Nome Autore</h2>
-                <form action="#">
-                    <label for="Nome Autore"></label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control" placeholder="Inserisci il nome dell' autore">
+                <form>
+                    <label for="genere">Genere:</label>
+                    <select id="genere" name="genere" class="form-select">
+                        <option value="" disabled selected>Seleziona un genere</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="fantasy">Romantico</option>
+                        <option value="giallo">Giallo</option>
+                        <option value="giallo">Saggi</option>
+                        <option value="storico">Storico</option>
+                        <option value="fantascienza">Fantascienza</option>
+                    </select>
                 </form>
             </div>
             <div class="col-md-4">
                 <h2>Nome Autore</h2>
                 <form action="#">
                     <label for="Nome Autore"></label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control" placeholder="Inserisci il nome dell' autore">
+                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
+                        placeholder="Inserisci il nome dell' autore">
                 </form>
             </div>
             <div class="col-md-4">
                 <h2>Nome Autore</h2>
                 <form action="#">
                     <label for="Nome Autore"></label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control" placeholder="Inserisci il nome dell' autore">
+                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
+                        placeholder="Inserisci il nome dell' autore">
                 </form>
             </div>
         </div>
         <div class="row mb-5">
             <div class="col">
+                <hr>
                 <h2>Nome Autore</h2>
                 <form action="#">
                     <label for="Nome Autore"></label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control" placeholder="Inserisci il nome dell' autore">
+                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
+                        placeholder="Inserisci il nome dell' autore">
                 </form>
             </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="accetta">
+                <label class="form-check-label" for="accetta">
+                    Accetto i termini e le condizioni
+                </label>
+            </div>
+            <a href="new-book.html" class="btn btn-primary">Aggiungi libro</a>
         </div>
     </div>
 </body>
+
 </html>
