@@ -66,6 +66,7 @@
                         <input type="text" id="Titolo" name="Titolo" class="form-control"
                             placeholder="Inserisci il titolo del libro">
                     </form>
+                    <span>Titolo versione italiana</span>
                 </div>
             </div>
             <div class="row mb-5 align-items-center">
@@ -86,8 +87,7 @@
                 <div class="col-md-4">
                     <form action="#">
                         <label for="Anno" class="form-label">Anno di pubblicazione</label>
-                        <input type="text" id="Anno" name="Anno" class="form-control"
-                            placeholder="Inserisci l'anno">
+                        <input type="text" id="Anno" name="Anno" class="form-control" placeholder="Inserisci l'anno">
                     </form>
                 </div>
                 <div class="col-md-4">
@@ -99,23 +99,23 @@
                 </div>
             </div>
             <div class="row mb-5">
-                <div class="col">
+                <div class="col d-flex flex-column gap-3">
                     <hr>
                     <form action="#">
                         <label for="Note" class="form-label">Note</label>
                         <textarea type="text" id="Note" name="Note" class="form-control" rows="4"
                             placeholder="Inserisci eventuali note sul libro"></textarea>
                     </form>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="accetta">
+                        <label class="form-check-label" for="accetta">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="accetta">
-                    <label class="form-check-label" for="accetta">
-                        Accetto i termini e le condizioni
-                    </label>
-                </div>
-                <a href="new-book.html" class="btn btn-primary">Aggiungi libro</a>
             </div>
-        </div>
+            <a href="new-book.html" class="btn btn-primary w-auto mb-5">Aggiungi libro</a>
     </main>
 </body>
 
