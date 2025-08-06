@@ -14,81 +14,109 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="mt-5 mb-5">Nuovo Libro</h1>
-        <div class="row mb-5">
-            <div class="col-md-6">
-                <form action="#">
-                    <label for="Nome Autore" class="form-label">Nome Autore</label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
-                        placeholder="Inserisci il nome dell' autore">
-                </form>
+    <header class="bg-dark mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img src="img/duck.png" height="80px" alt="duck">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6">
-                <form action="#">
-                    <label for="Cognome Autore" class="form-label">Cognome autore</label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
-                        placeholder="Inserisci il cognome dell' autore">
-                </form>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="mt-5 mb-5">Nuovo Libro</h1>
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <form action="#">
+                        <label for="NomeAutore" class="form-label">Nome Autore</label>
+                        <input type="text" id="NomeAutore" name="NomeAutore" class="form-control"
+                            placeholder="Inserisci il nome dell' autore">
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <form action="#">
+                        <label for="CognomeAutore" class="form-label">Cognome autore</label>
+                        <input type="text" id="CognomeAutore" name="CognomeAutore" class="form-control"
+                            placeholder="Inserisci il cognome dell' autore">
+                    </form>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col">
+                    <form action="#">
+                        <label for="Titolo" class="form-label">Titolo</label>
+                        <input type="text" id="Titolo" name="Titolo" class="form-control"
+                            placeholder="Inserisci il titolo del libro">
+                    </form>
+                </div>
+            </div>
+            <div class="row mb-5 align-items-center">
+                <div class="col-md-4">
+                    <form>
+                        <label for="Genere" class="form-label">Genere</label>
+                        <select id="Genere" name="Genere" class="form-select">
+                            <option value="" disabled selected>Seleziona un genere</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="fantasy">Romantico</option>
+                            <option value="giallo">Giallo</option>
+                            <option value="giallo">Saggi</option>
+                            <option value="storico">Storico</option>
+                            <option value="fantascienza">Fantascienza</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <form action="#">
+                        <label for="Anno" class="form-label">Anno di pubblicazione</label>
+                        <input type="text" id="Anno" name="Anno" class="form-control"
+                            placeholder="Inserisci l'anno">
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <form action="#">
+                        <label for="Codice" class="form-label"> ISBN#</label>
+                        <input type="text" id="Codice" name="Codice" class="form-control"
+                            placeholder="Inserisci il codice ISBN#">
+                    </form>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col">
+                    <hr>
+                    <form action="#">
+                        <label for="Note" class="form-label">Note</label>
+                        <textarea type="text" id="Note" name="Note" class="form-control" rows="4"
+                            placeholder="Inserisci eventuali note sul libro"></textarea>
+                    </form>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="accetta">
+                    <label class="form-check-label" for="accetta">
+                        Accetto i termini e le condizioni
+                    </label>
+                </div>
+                <a href="new-book.html" class="btn btn-primary">Aggiungi libro</a>
             </div>
         </div>
-        <div class="row mb-5">
-            <div class="col">
-                <form action="#">
-                    <label for="Titolo" class="form-label">Titolo</label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
-                        placeholder="Inserisci il titolo del libro">
-                </form>
-            </div>
-        </div>
-        <div class="row mb-5 align-items-center">
-            <div class="col-md-4">
-                <form>
-                    <label for="Genere" class="form-label">Genere</label>
-                    <select id="genere" name="genere" class="form-select">
-                        <option value="" disabled selected>Seleziona un genere</option>
-                        <option value="fantasy">Fantasy</option>
-                        <option value="fantasy">Romantico</option>
-                        <option value="giallo">Giallo</option>
-                        <option value="giallo">Saggi</option>
-                        <option value="storico">Storico</option>
-                        <option value="fantascienza">Fantascienza</option>
-                    </select>
-                </form>
-            </div>
-            <div class="col-md-4">
-                <form action="#">
-                    <label for="Nome Autore" class="form-label">Anno di pubblicazione</label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
-                        placeholder="Inserisci l'anno">
-                </form>
-            </div>
-            <div class="col-md-4">
-                <form action="#">
-                    <label for="Nome Autore" class="form-label"> ISBN#</label>
-                    <input type="text" id="Nome Autore" name="Nome Autore" class="form-control"
-                        placeholder="Inserisci il codice ISBN#">
-                </form>
-            </div>
-        </div>
-        <div class="row mb-5">
-            <div class="col">
-                <hr>
-                <form action="#">
-                    <label for="Note" class="form-label">Note</label>
-                    <textarea type="text" id="note" name="note" class="form-control" rows="4"
-                        placeholder="Inserisci eventuali note sul libro"></textarea>
-                </form>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="accetta">
-                <label class="form-check-label" for="accetta">
-                    Accetto i termini e le condizioni
-                </label>
-            </div>
-            <a href="new-book.html" class="btn btn-primary">Aggiungi libro</a>
-        </div>
-    </div>
+    </main>
 </body>
 
 </html>
